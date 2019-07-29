@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './app.vue';
 import router from './router';
 import * as config from './shared/config/config';
-import * as bootstrapVueConfig from './shared/config/config-bootstrap-vue';
+// import * as bootstrapVueConfig from './shared/config/config-bootstrap-vue';
+import './shared/config/config-bootstrap-vue';
 import JhiItemCountComponent from './shared/jhi-item-count.vue';
 import AuditsService from './admin/audits/audits.service';
 import HealthService from './admin/health/health.service';
@@ -18,7 +19,7 @@ import UserManagementService from '@/admin/user-management/user-management.servi
 import LoginService from './account/login.service';
 import AccountService from './account/account.service';
 
-import '../public/scss/vendor.scss';
+import '@/public/scss/vendor.scss';
 import AlertService from '@/shared/alert/alert.service';
 import ConfigurationService from '@/admin/configuration/configuration.service';
 
@@ -30,7 +31,7 @@ import RowRecordExtraService from '@/entities/row-record-extra/row-record-extra.
 Vue.config.productionTip = false;
 config.initVueApp(Vue);
 config.initFortAwesome(Vue);
-bootstrapVueConfig.initBootstrapVue(Vue);
+// bootstrapVueConfig.initBootstrapVue(Vue);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('jhi-item-count', JhiItemCountComponent);
 
