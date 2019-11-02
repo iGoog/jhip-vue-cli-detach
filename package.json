@@ -20,7 +20,7 @@
     "core-js": "^2.6.5",
     "date-fns": "2.0.0-alpha.26",
     "numeral": "2.0.6",
-    "swagger-ui": "^3.23.1",
+    "swagger-ui": "^3.23.11",
     "vue": "^2.6.10",
     "vue-class-component": "7.0.2",
     "vue-cookie": "1.1.4",
